@@ -36,9 +36,9 @@ GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
 AUTHORIZE_URL = "https://accounts.google.com/o/oauth2/auth"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 USERINFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
-REDIRECT_URI = "https://chat-app-1-ufq9.onrender.com//oauth/google/callback"
+REDIRECT_URI =os.getenv('REDIRECT_URI')
 SCOPE = "openid email profile"
-FRONTEND_URL = "http://preeminent-paletas-3a0aed.netlify.app/oauthsucess"
+FRONTEND_URL =os.getenv('FRONTEND_URL')
 
 # ---------- JWT CONFIG ----------
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY')
