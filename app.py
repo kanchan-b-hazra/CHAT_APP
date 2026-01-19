@@ -112,7 +112,7 @@ def google_callback():
         #     'state':1
         # })
         response = redirect(
-            f"{FRONTEND_URL}/?access_token={access_token}"
+            f"{FRONTEND_URL}/oauthsuccess?access_token={access_token}"
         )
 
         # 🔐 secure refresh token
@@ -143,7 +143,7 @@ def google_callback():
         #     'state':1
         # })
         response = redirect(
-            f"{FRONTEND_URL}/?access_token={access_token}"
+            f"{FRONTEND_URL}/oauthsuccess?access_token={access_token}"
         )
 
         # 🔐 secure refresh token
